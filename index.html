@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Runspindle technical demo: authorize a recurring job, pause or recover at a boundary, and independently verify the outcome.">
+<title>Runspindle / Execution trace</title><link rel="stylesheet" href="site.css"><script src="split.js"></script>
+</head>
+<body class="tech">
+<a class="skip" href="#content">Skip to content</a>
+<header class="shell top"><a class="wordmark" href="index.html">RUNSPINDLE<span> / demo</span></a><nav aria-label="Editions"><a href="index.html" aria-current="page">Technical</a><a href="business.html">Business ↗</a></nav></header>
+<main id="content" class="shell">
+<section class="hero">
+<div><p class="eyebrow">01 / EXECUTION CONTRACT</p><h1>Run the job.<br>Verify the effect.</h1><p class="lead">Keep the agents and apps you already use. Give one recurring job a defined scope, a way to stop or recover, and a result somebody else can check.</p>
+<div class="ctas"><a class="button" href="https://github.com/newdarwindev/runspindle-demo-suite/releases/download/demo-193b07c4eae8/combined-reel.mp4">Open the fixture reel (MP4, 23 MB)</a><a href="#evidence">Evidence and limits ↓</a></div></div>
+<div class="terminal" aria-label="Illustrative job states"><div class="terminalbar"><span>inspection</span><span>ILLUSTRATION</span></div>
+<ol><li><code>01</code><div><strong>BOUND</strong> · one approved job, target and scope</div></li><li><code>02</code><div><strong>PAUSED</strong> · expected session expired</div></li><li><code>03</code><div><strong>RESUMED</strong> · authorization and target rechecked</div></li><li><code>04</code><div><strong>VERIFIED</strong> · independent destination readback</div></li></ol>
+<p class="note">Illustrative state sequence, not a captured production run.</p></div></section>
+<section id="evidence" class="content"><p class="eyebrow">02 / CHECK THE WORK</p><h2>Three useful test cases</h2>
+<div class="cards"><article><p class="chip">RECORDED FIXTURE</p><h3>Bookkeeper: expired sign-in</h3><p>A fictional workflow runs in a browser, encounters expired access, and resumes after the session is restored. Open the recording and separate outcome checks in the demo package.</p><a href="https://github.com/newdarwindev/runspindle-demo-suite/releases/tag/demo-193b07c4eae8">Verified gallery and receipts ↗</a></article>
+<article><p class="chip">RECORDED FIXTURE</p><h3>Bakery: output and rollback</h3><p>Check the prep output independently. Compare two pinned versions, require explicit approval before activation, and verify rollback. The approver in the fixture is scripted.</p><a href="https://github.com/newdarwindev/runspindle-demo-suite/blob/main/docs/PRESENTATION.md">How this was checked ↗</a></article>
+<article><p class="chip">TESTED COMPONENT</p><h3>Lost acknowledgment: one effect</h3><p>An isolated Browser test loses the reply after an accepted action. The journal retains an unknown outcome until a separate readback confirms one effect. It doesn’t blindly resubmit.</p><a href="https://github.com/newdarwindev/runspindle-browser/blob/03e4cbd2135e0cd6736446b0de3f07eab5f788e8/docs/F07_ACCEPTANCE.md">Exact acceptance ledger ↗</a></article></div></section>
+<section class="band"><div><p class="eyebrow">03 / STATUS</p><h2>Archived proof ≠ live qualification</h2></div><div><p>The <a href="https://github.com/newdarwindev/runspindle-demo-suite/blob/main/docs/STATUS.md">branded archive</a> contains seven recorded browser workflows and 16 checked fault expectations. A later <a href="https://github.com/newdarwindev/runspindle-demo-suite/actions/runs/44769346897">fixture publisher run</a> was canceled; it does not replace the published evidence. <a href="https://github.com/newdarwindev/runspindle-browser/actions/runs/45198642058">Recent Browser main CI</a> passed for the handback-fence change. These are separate checks, not evidence of a deployed end-to-end product or measured savings.</p></div></section>
+</main><footer class="shell footer"><a href="https://github.com/newdarwindev/runspindle">Product source ↗</a><a href="https://github.com/newdarwindev/runspindle-demo-suite/releases/download/demo-193b07c4eae8/combined-reel.webm">WebM reel ↗</a><span>Static demo · no live operations or analytics</span><a href="https://newdarwindev.github.io/meeting-runspindle-demo/">See the proposed meeting-to-work handoff ↗</a></footer>
+</body></html>
